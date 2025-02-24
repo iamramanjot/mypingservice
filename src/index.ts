@@ -4,9 +4,9 @@ import postgres from "postgres";
 
 async function main() {
   const server = fastify();
-  const dbName = process.env.DB_NAME || 'sitemonitor';
-  const dbUser = process.env.DB_USER || 'sitemonitor';
-  const dbPassword = process.env.DB_PASSWORD || 'sitemonitor';
+  const dbName = process.env.DB_NAME || 'testapp';
+  const dbUser = process.env.DB_USER || 'testapp';
+  const dbPassword = process.env.DB_PASSWORD || 'testapp';
 
   
   const dbUrl = await setupDatabase('postgres', dbName, {
